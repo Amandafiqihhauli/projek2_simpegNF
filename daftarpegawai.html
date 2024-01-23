@@ -184,7 +184,7 @@
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="dashboard.html">Home</a></li>
               <li class="breadcrumb-item active">Daftar Pegawai</li>
             </ol>
           </div><!-- /.col -->
@@ -204,8 +204,81 @@
         </div>
         <!-- /.card-header -->
         <div class="card-body">
-          <div id="jsGrid1"></div>
-          <a class="btn btn-primary" href="kelolapegawai.html">Tambah</a>
+          <div class="form">
+              <table class="table col-12 col-sm-12">
+                <thead>
+                  <tr class="table-primary">
+                    <th>No</th>
+                    <th>Nama</th>
+                    <th>Jabatan</th>
+                    <th>Tempat Lahir</th>
+                    <th>Tanggal lahir</th>
+                    <th>Aktif</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Budi Dharmawan</td>
+                    <td>Direktur</td>
+                    <td>Bogor</td>
+                    <td>2000-10-11</td>
+                    <td>
+                      <input type="checkbox" checked>
+                    </td>
+                    <td>
+                      <a href="#" class="btn btn-primary" role="button">Detail</a>
+                      <a href="#" class="btn btn-success" role="button">Edit</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Annisa Amalia</td>
+                    <td>Manajer</td>
+                    <td>Surabaya</td>
+                    <td>2001-05-21</td>
+                    <td>
+                      <input type="checkbox" checked>
+                    </td>
+                    <td>
+                      <a href="#" class="btn btn-primary" role="button">Detail</a>
+                      <a href="#" class="btn btn-success" role="button">Edit</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Eddy Pardiman</td>
+                    <td>Staff</td>
+                    <td>Cilacap</td>
+                    <td>1999-07-15</td>
+                    <td>
+                      <input type="checkbox">
+                    </td>
+                    <td>
+                      <a href="#" class="btn btn-primary" role="button">Detail</a>
+                      <a href="#" class="btn btn-success" role="button">Edit</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Nurul Hidayah</td>
+                    <td>Staff</td>
+                    <td>Depok</td>
+                    <td>2003-01-04</td>
+                    <td>
+                      <input type="checkbox" checked>
+                    </td>
+                    <td>
+                      <a href="#" class="btn btn-primary" role="button">Detail</a>
+                      <a href="#" class="btn btn-success" role="button">Edit</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <a class="btn btn-primary" href="kelolapegawai.html">Tambah</a>
+          </form>
         </div>
         <!-- /.card-body -->
       </div>
@@ -279,7 +352,7 @@
 <script>
   $(function () {
     $("#jsGrid1").jsGrid({
-        height: "250px",
+        height: "100%",
         width: "100%",
 
         sorting: true,

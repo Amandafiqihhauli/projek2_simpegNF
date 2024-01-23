@@ -129,7 +129,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="daftarpegawai.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Daftar Pegawai</p>
                 </a>
@@ -184,7 +184,7 @@
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="dashboard.html">Home</a></li>
               <li class="breadcrumb-item active">Daftar Pengajuan</li>
             </ol>
           </div><!-- /.col -->
@@ -205,8 +205,8 @@
         <!-- /.card-header -->
         <div class="card-body">
           <div class="form-group row">
-            <label for="select" class="col-2 col-form-label">Bulan - Tahun</label> 
-            <div class="col-2">
+            <label for="select" class="col-12 col-sm-2 col-form-label">Bulan - Tahun</label> 
+            <div class="col-6 col-sm-2">
               <select id="select" name="select" class="custom-select">
                 <option value="januari">Januari</option>
                 <option value="februari">Februari</option>
@@ -222,7 +222,7 @@
                 <option value="desember">Desember</option>
               </select>
             </div>
-            <div class="col-2 mb-4">
+            <div class="col-6 mb-4 col-sm-2">
               <select id="select" name="select" class="custom-select">
                 <option value="2023">2024</option>
                 <option value="2023">2023</option>
@@ -231,7 +231,54 @@
                 <option value="2020">2020</option>
               </select>
             </div>
-            <div id="jsGrid1"></div>
+            <table class="table col-12 col-sm-12">
+              <thead>
+                <tr class="table-primary">
+                  <th>No</th>
+                  <th>Nama</th>
+                  <th>Jabatan</th>
+                  <th>Tanggal</th>
+                  <th>Jam Mulai</th>
+                  <th>Jam Akhir</th>
+                  <th>Disetujui</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Budi Dharmawan</td>
+                  <td>Direktur</td>
+                  <td>2023-11-10</td>
+                  <td>17:00</td>
+                  <td>20:00</td>
+                  <td>
+                    <input type="checkbox" checked>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Annisa Amalia</td>
+                  <td>Manajer</td>
+                  <td>2023-11-10</td>
+                  <td>17:00</td>
+                  <td>21:00</td>
+                  <td>
+                    <input type="checkbox" checked>
+                  </td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Eddy Pardiman</td>
+                  <td>Staff</td>
+                  <td>2023-11-26</td>
+                  <td>17:00</td>
+                  <td>22:00</td>
+                  <td>
+                    <input type="checkbox">
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
         <!-- /.card-body -->

@@ -28,6 +28,11 @@
   <!-- fullCalendar -->
   <link rel="stylesheet" href="plugins/fullcalendar/main.css">
 </head>
+
+<style>
+  
+</style>
+
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
 
@@ -183,7 +188,7 @@
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="dashboard.html">Home</a></li>
               <li class="breadcrumb-item active">Dashboard Pegawai</li>
             </ol>
           </div><!-- /.col -->
@@ -195,35 +200,37 @@
     <!-- Main content -->
     <section class="content" style="display: flex;">
 
-      <div class="col-4">
-        <div class="card">
-          <div class="card-header bg-primary">
+      <div class="row">
+        <div class="col-12 col-lg-4">
+          <div class="card">
+            <div class="card-header bg-primary">
+              <h1 class="card-title">
+                <i class="fas fa-bullhorn"></i>
+                Pengumuman
+              </h1>
+            </div>
+            <div class="card-body">
+              <p style="text-align: justify; line-height: 1.6;">
+                Demi meningkatkan efisiensi operasional dan menyesuaikan dengan dinamika lingkungan bisnis, kami akan melakukan penyesuaian jadwal kerja bagi beberapa divisi perusahaan. Perubahan ini akan mulai berlaku efektif pada tanggal [24 Januari 2024]. Kami menghargai dedikasi dan kerja keras setiap pegawai kami dalam mendukung pertumbuhan dan kesuksesan perusahaan. Terima kasih atas pengertian dan kerjasama Anda selama ini.
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-12 col-lg-8">
+          <div class="card card-header bg-primary mb-0">
             <h1 class="card-title">
-              <i class="fas fa-bullhorn"></i>
-              Pengumuman
+              <i class="fas fa-calendar"></i>
+              Kalender
             </h1>
           </div>
-          <div class="card-body">
-            <p style="text-align: justify; line-height: 1.6;">
-              Demi meningkatkan efisiensi operasional dan menyesuaikan dengan dinamika lingkungan bisnis, kami akan melakukan penyesuaian jadwal kerja bagi beberapa divisi perusahaan. Perubahan ini akan mulai berlaku efektif pada tanggal [24 Januari 2024]. Kami menghargai dedikasi dan kerja keras setiap pegawai kami dalam mendukung pertumbuhan dan kesuksesan perusahaan. Terima kasih atas pengertian dan kerjasama Anda selama ini.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-8">
-        <div class="card card-header bg-primary mb-0">
-          <h1 class="card-title">
-            <i class="fas fa-calendar"></i>
-            Kalender
-          </h1>
-        </div>
-            
-        <div class="row">
-          <div class="col-md-12" id="external-events">
-            <div class="card card-primary">
-              <div class="card-body p-0">
-                <div id="calendar"></div>
+              
+          <div class="row">
+            <div class="col-md-12" id="external-events">
+              <div class="card card-primary">
+                <div class="card-body p-0">
+                  <div id="calendar"></div>
+                </div>
               </div>
             </div>
           </div>

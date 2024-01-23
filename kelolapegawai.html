@@ -181,7 +181,7 @@
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="dashboard.html">Home</a></li>
               <li class="breadcrumb-item active">Kelola Pegawai</li>
             </ol>
           </div><!-- /.col -->
@@ -194,54 +194,119 @@
     <section class="content">
       <div class="card">
         <div class="card-header bg-primary">
-          <h3 class="card-title"><i class="nav-icon fas fa-newspaper"></i> Create Pegawai Baru</h3>
+          <h3 class="card-title"><i class="nav-icon fas fa-newspaper"></i>  Create Pegawai Baru</h3>
         </div>
-        <div class="card-body">
-        <form action="#" method="get">
-          <table width="40%" cellspacing="3" cellpadding="5">
-            <tr>
-             <td>Nama Pegawai:</td>
-             <td><input type="text" name="nama pegawai"></td>
-            </tr>
-            <tr>
-             <td>Tempat, Tgl Lahir:</td>
-             <td>
-              <input type="text" name="tempat, tgl lahir">
-            </td>
-            </tr>
-            <tr>
-             <td>Gender:</td>
-             <td>
-              <input type="radio" name="gender" value="Laki-laki"> Laki-laki
-              &ensp;
-              <input type="radio" name="gender" value="Perempuan"> Perempuan
-             </td>
-            </tr>
-            <tr>
-             <td>NIK:</td>
-             <td><input type="text" name="nik"></td>
-             </td>
-            </tr>
-            <tr>
-             <td>Alamat:</td>
-             <td><input type="text" name="alamat"></td>
-            </tr>
-            <tr>
-             <td>Email:</td>
-             <td><input type="text" name="email"></td>
-            </tr>
-            <tr>
-             <td>Telepon/Hp:</td>
-             <td><input type="text" name="telepon/hp"></td>
-            </tr>
-            <tr>
-             <td colspan="2">
-              <input class="btn btn-primary" type="submit" name="submit" value="Simpan">&ensp;
-              <input class="btn btn-danger" type="reset" name="Hapus" value="Hapus">
-             </td>
-            </tr>
-          </table>
+
+        <form action="">
+          <div class="card-body">
+            <div class="form-group row">
+              <label for="nama" class="col-sm-3">Nama Pegawai</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="nama">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="tmpL" class="col-sm-3">Tempat & Tanggal Lahir</label>
+              <div class="col-sm-2 col-6">
+                <input type="text" class="form-control" id="tmpL">
+              </div>
+              <div class="col-sm-2 col-6">
+                <input type="date" class="form-control" id="tmpL">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="gender" class="col-sm-3">Gender</label>
+              <div class="col-sm-1 col-3">
+                <input type="radio" name="gender" class="form-control" id="gender">
+              </div>
+              <div class="col-sm-1 col-3">
+                <p>Pria</p>
+              </div>
+              <div class="col-sm-1 col-3">
+                <input type="radio" name="gender" class="form-control" id="gender">
+              </div>
+              <div class="col-sm-1 col-3">
+                <p>Wanita</p>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="nik" class="col-sm-3">NIK</label>
+              <div class="col-sm-3">
+                <input type="text" class="form-control" id="nik">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="alamat" class="col-sm-3">Alamat</label>
+              <div class="col-sm-4">
+                  <textarea class="form-control" rows="3"></textarea>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="email" class="col-sm-3">Email</label>
+              <div class="col-sm-4">
+                <input type="email" class="form-control" id="email">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="no" class="col-sm-3">No Telepon</label>
+              <div class="col-sm-4">
+                <input type="number" class="form-control" id="no">
+              </div>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <button type="submit" class="btn btn-primary mr-3">Submit</button>
+            <button type="reset" class="btn btn-danger">Reset</button>
+          </div>
         </form>
+        
+          <!-- <form action="#" method="get">
+            <table width="100%" cellspacing="3" cellpadding="5">
+              <tr>
+              <td>Nama Pegawai:</td>
+              <td><input type="text" name="nama pegawai"></td>
+              </tr>
+              <tr>
+              <td>Tempat, Tgl Lahir:</td>
+              <td>
+                <input type="text" name="tempat, tgl lahir">
+              </td>
+              </tr>
+              <tr>
+              <td>Gender:</td>
+              <td>
+                <input type="radio" name="gender" value="Laki-laki"> Laki-laki
+                &ensp;
+                <input type="radio" name="gender" value="Perempuan"> Perempuan
+              </td>
+              </tr>
+              <tr>
+              <td>NIK:</td>
+              <td><input type="text" name="nik"></td>
+              </td>
+              </tr>
+              <tr>
+              <td>Alamat:</td>
+              <td><input type="text" name="alamat"></td>
+              </tr>
+              <tr>
+              <td>Email:</td>
+              <td><input type="text" name="email"></td>
+              </tr>
+              <tr>
+              <td>Telepon/Hp:</td>
+              <td><input type="text" name="telepon/hp"></td>
+              </tr>
+              <tr>
+              <td colspan="2">
+                <input class="btn btn-primary" type="submit" name="submit" value="Simpan">&ensp;
+                <input class="btn btn-danger" type="reset" name="Hapus" value="Hapus">
+              </td>
+              </tr>
+            </table>
+          </form> -->
+        </div>
       </div>
     </section>
   </div>
